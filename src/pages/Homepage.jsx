@@ -5,11 +5,11 @@ import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
 
 const Homepage = () => {
   return (
-    //Earnings section 
-    <div className='mt-20 flex justify-center items-center flex-col'>
-      <div className='flex flex-wrap lg:flex-nowrap rounded-xl justify-center items-center content-center'>
+    <div className='m-10 flex justify-center items-center flex-col'>
+      {/* Earnings section  */}
+      <div className='flex flex-wrap lg:flex-nowrap rounded-xl justify-center gap-4'>
         <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-xl'>
-          <div className='flex flex-col items-center m-8 gap-2'>
+          <div className='flex flex-col items-center text-center m-8 gap-2'>
               <p className='font-bold text-slate-500 dark:text-white text-xl'>Earnings</p>
               <p className='text-xl'>$42,235.31</p>
             <Button
@@ -23,11 +23,11 @@ const Homepage = () => {
         </div>
         
         {/* Cards section */}
-        <div className='flex m-4 gap-4 flex-wrap place-content-center'>
+        <div className='flex gap-4 lg:flex-nowrap flex-wrap justify-center w-full self-center'>
           {earningData.map((item) => (
             <div
             key={item.title}
-            className='rounded-xl flex flex-col items-center gap-2 w-full
+            className='rounded-xl flex flex-col items-center gap-2 p-4 w-full sm:w-auto
             bg-white dark:text-gray-200 dark:bg-secondary-dark-bg'
             >
               <p className='text-lg font-semibold text-slate-500 dark:text-white'>{item.title}</p>
@@ -50,7 +50,6 @@ const Homepage = () => {
           ))}
         </div>
       </div>
-
         {/* Revenue section */}
         <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg
          mt-6 rounded-2xl'>

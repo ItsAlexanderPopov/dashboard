@@ -36,7 +36,6 @@ const App = () => {
               {/* Dashboard */}
               <Route path="/" element={ <Homepage/> } />
               <Route path="/homepage" element={ <Homepage/> } />
-              
               {/* Pages */}
               <Route path="/orders" element={ <Orders/> } />
               <Route path="/employees" element={ <Employees/> } />
@@ -54,7 +53,7 @@ const App = () => {
               <Route path="/bar" element={ <Bar/> } />
               <Route path="/financial" element={ <Financial/> } />
               <Route path="/stacked" element={ <Stacked/> } />
-
+              <Route path="/stacked" element={ <Stacked/> } />
             </Routes>
           </div>
           <Footer/>
