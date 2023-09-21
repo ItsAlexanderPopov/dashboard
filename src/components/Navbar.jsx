@@ -56,7 +56,7 @@ const Navbar = () => {
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
 
   return (
-    <div className='flex justify-between p-2 md:mx-6'>
+    <div className='flex justify-between p-2 m-2 md:mx-28'>
       <NavButton 
         title="Menu" 
         customFunc={handleActiveMenu} 
@@ -64,34 +64,36 @@ const Navbar = () => {
         icon={<AiOutlineMenu/>}
       />
       <div className='flex'>
-        <NavButton
-          title="Change Theme" 
-          customFunc={()=> { setLightMode(!lightMode);
-            localStorage.setItem('themeMode', JSON.stringify(!lightMode));
-          }}
-          color = "#748BA7"
-          icon = { lightMode ? <MdOutlineDarkMode/> : <MdOutlineLightMode/>}
-        />
-        <NavButton 
-          title="Cart" 
-          customFunc={()=> handleClick('cart')}
-          color = "#748BA7"
-          icon = { <FiShoppingCart/> }
-        />
-         <NavButton 
-          title="Chat" 
-          customFunc={()=> handleClick('chat')}
-          color = "#748BA7"
-          icon = { <BsChatLeft/> }
-          dotColor="#03C9D7"
-        />
-         <NavButton 
-          title="Notification" 
-          customFunc={()=> handleClick('notification')}
-          color = "#748BA7"
-          icon = { <RiNotification3Line/> }
-          dotColor="#03C9D7"
-        />
+        <div className='hidden lg:flex'>
+          <NavButton
+            title="Change Theme" 
+            customFunc={()=> { setLightMode(!lightMode);
+              localStorage.setItem('themeMode', JSON.stringify(!lightMode));
+            }}
+            color = "#748BA7"
+            icon = { lightMode ? <MdOutlineDarkMode/> : <MdOutlineLightMode/>}
+          />
+          <NavButton 
+            title="Cart" 
+            customFunc={()=> handleClick('cart')}
+            color = "#748BA7"
+            icon = { <FiShoppingCart/> }
+          />
+          <NavButton 
+            title="Chat" 
+            customFunc={()=> handleClick('chat')}
+            color = "#748BA7"
+            icon = { <BsChatLeft/> }
+            dotColor="#03C9D7"
+          />
+          <NavButton 
+            title="Notification" 
+            customFunc={()=> handleClick('notification')}
+            color = "#748BA7"
+            icon = { <RiNotification3Line/> }
+            dotColor="#03C9D7"
+          />
+        </div>
         <TooltipComponent content="Profile" position='BottomCenter'>
           <div onClick={() => handleClick("userProfile")}
           className='flex items-center gap-2 cursor-pointer p-1 hover:bg-slate-200 dark:hover:bg-light-gray rounded-xl'>
@@ -99,7 +101,7 @@ const Navbar = () => {
             src={avatar}
             className='rounded-full w-10 h-10'
            />
-            <p className='text-slate-400 text-lg flex items-center'>
+            <p className='text-slate-400 text-lg items-center hidden md:flex'>
               <span>Hi,</span>
               <span className=" font-semibold ml-2">Alex</span>
               <MdKeyboardArrowDown/>

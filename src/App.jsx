@@ -28,10 +28,10 @@ const App = () => {
             `dark:bg-main-dark-bg bg-main-bg min-h-screen w-full 
             ${activeMenu ? 'md:ml-72' : 'flex-2'}`
           }>
-            <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg w-full z-40'>
+            <div className='bg-main-bg dark:bg-main-dark-bg z-40'>
               <Navbar/>
             </div>
-          <div className='-z-10'>
+          <div className='-z-10 w-full m-auto'>
             <Routes>
               {/* Dashboard */}
               <Route path="/" element={ <Homepage/> } />

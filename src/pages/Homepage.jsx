@@ -6,16 +6,12 @@ import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
 const Homepage = () => {
   return (
     //Earnings section 
-    <div className='mt-12 flex justify-center items-center flex-col'>
-      <div className='flex flex-wrap lg:flex-nowrap justify-center rounded-xl'>
-        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3'>
-          <div className='flex justify-between items-center'>
-            <div>
-              <p className='font-bold text-slate-500 dark:text-white text-xl place-self-start'>Earnings</p>
+    <div className='mt-20 flex justify-center items-center flex-col'>
+      <div className='flex flex-wrap lg:flex-nowrap rounded-xl justify-center items-center content-center'>
+        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-xl'>
+          <div className='flex flex-col items-center m-8 gap-2'>
+              <p className='font-bold text-slate-500 dark:text-white text-xl'>Earnings</p>
               <p className='text-xl'>$42,235.31</p>
-            </div>
-          </div>
-          <div className='mt-6'>
             <Button
             color="white"
             bgColor="#748BA7"
@@ -57,19 +53,19 @@ const Homepage = () => {
 
         {/* Revenue section */}
         <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg
-        p-4 mt-6 rounded-2xl'>
-            <div className='lg:flex gap-10'>
-              <div className='lg:border-r-1 border-color m-4 pr-20 flex flex-col'>
-              <p className='text-xl font-semibold text-slate-500 mb-12 dark:text-white'>Revenue Updates</p>
+         mt-6 rounded-2xl'>
+            <div className='lg:flex'>
+              <div className='lg:border-r-1 border-color m-4 lg:pr-20 flex flex-col items-center text-center lg:text-start lg:items-start'>
+              <p className='text-3xl lg:text-xl font-semibold text-slate-500 mb-12 dark:text-white'>Revenue Updates</p>
                   <p>
-                    <span className='text-3xl font-semibold'>$53,443</span>
+                    <span className='text-xl md:text-3xl font-semibold'>$53,443</span>
                     <span className='p-1.5 hover:drop-shadow-xl cursor-pointer
                   bg-teal-500 ml-3 text-xs rounded-full text-white'>21%</span>
                   </p>
                   <p className='text-slate-500 mb-8'>Budget</p>
                 <div>
                   <p>
-                    <span className='text-3xl font-semibold'>$21,241</span>
+                    <span className='text-xl md:text-3xl font-semibold'>$21,241</span>
                   </p>
                   <p className='text-slate-500 mt-1'>Expense</p>
                 </div>
@@ -95,25 +91,25 @@ const Homepage = () => {
                 </div>
               </div>
 
-              <div className='flex flex-col m-4 lg:border-r-1 border-color pr-20'>
-              <p className='text-xl font-semibold text-slate-500 mb-6 dark:text-white'>Transactions</p>
-                <div className='flex gap-6 place-self-end'>
-                  <p className='flex items-center text-slate-500 hover:drop-shadow-xl'>
+              <div className='lg:border-r-1 border-color m-4 lg:pr-20 flex flex-col items-center text-center lg:text-start lg:items-start'>
+              <p className='text-3xl lg:text-xl font-semibold text-slate-500 mb-6 dark:text-white'>Transactions</p>
+                <div className='flex gap-6 lg:place-self-end'>
+                  <p className='flex items-center text-slate-500'>
                     <span><GoDotFill/></span>
                     <span>Expense</span>
                   </p>
-                  <p className='flex items-center text-teal-500 hover:drop-shadow-xl'>
+                  <p className='flex items-center text-teal-500'>
                     <span><GoDotFill/></span>
                     <span>Budget</span>
                   </p>
                 </div>
                 <div>
-                  <Stacked width="320px" height="360px"/>
+                  <Stacked width="260px" height="300px"/>
                 </div>
               </div>
-              <div className='flex flex-col m-4'>
-                <p className='text-xl font-semibold text-slate-500 dark:text-white'>Sales</p>
-                <Pie id="pie-chart" data={ecomPieChartData} legendVisiblity={false} height="400px" />
+              <div className='lg:border-r-1 border-color mt-4 ml-4 lg:pr-20 flex flex-col items-center text-center lg:text-start lg:items-start'>
+                <p className='text-3xl lg:text-xl font-semibold text-slate-500 dark:text-white'>Sales</p>
+                <Pie id="pie-chart" data={ecomPieChartData} legendVisiblity={false} height="340px" />
               </div>
             </div>
         </div>
