@@ -3,30 +3,6 @@
 /* Syncfusion Switch CSS */ 
 /* customize the line of the switch in off mode */
 
-/* customize the line of the switch in on mode */
-.e-switch-wrapper.customSwitch .e-switch-on{
-  background-color: white;
-
-}
-
-/* customize the handle of the switch in on mode */
-.e-switch-wrapper.customSwitch .e-switch-handle.e-switch-active{
-  background-color: white;
-
-}
-
-/* customize the handle of the switch in on mode when hover */
-.e-switch-wrapper.customSwitch:hover .e-switch-handle.e-switch-active{
-  background-color: white;
-
-}
-
-/* customize the line of the switch in on mode when hover */
-.e-switch-wrapper.customSwitch:hover .e-switch-inner.e-switch-active .e-switch-on{
-  background-color: white;
-
-}
-/* End of switch CSS */ 
 
 .sidebar {
   box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;

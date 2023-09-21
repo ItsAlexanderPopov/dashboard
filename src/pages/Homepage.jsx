@@ -27,14 +27,14 @@ const Homepage = () => {
           {earningData.map((item) => (
             <div
             key={item.title}
-            className='md:w-56 rounded-xl p-4 flex flex-col items-center gap-3
+            className='rounded-xl flex flex-col items-center gap-2 w-full
             bg-white dark:text-gray-200 dark:bg-secondary-dark-bg'
             >
               <p className='text-lg font-semibold text-slate-500 dark:text-white'>{item.title}</p>
               <button
               type='button'
               style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-              className='text-2xl rounded-full opacity-80 p-4 hover:drop-shadow-md'
+              className='text-3xl rounded-full opacity-80 p-3 hover:drop-shadow-md'
               >
                 {item.icon}
               </button>

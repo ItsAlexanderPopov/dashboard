@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className={!lightMode && 'dark'}>
       <BrowserRouter>
-        <div className='flex relative dark:bg-main-dark-bg'>
+        <div className='flex relative dark:bg-main-dark-bg overflow-x-hidden'>
           {activeMenu ? (
             <div className='w-72 fixed dark:bg-secondary-dark-bg bg-white transition-all duration-500 ease-in z-50'>
               <Sidebar/>
