@@ -1,4 +1,6 @@
 # Dashboard
+## Link
+https://echo-ap.vercel.app
 
 ## Description
 Multipurpose dashboard design and functionality include various data graphs, grid tables, and apps such as a calendar, kanban, and text editor. 
@@ -18,6 +20,7 @@ The data in the grids and apps is customizable, showcasing the ability to create
 
 ## Technologies Used
 <div>
+<img src='https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB' alt='React'/>
 <img src='https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E' alt='JavaScript'/>
 <img src='https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white' alt='CSS3'/>
 <img src='https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white' alt='HTML5'/>
@@ -25,11 +28,7 @@ The data in the grids and apps is customizable, showcasing the ability to create
 <img src='https://img.shields.io/badge/syncfusion-000000?style=for-the-badge' alt='Syncfusion'/>
 </div>
 
-## Link
-https://echo-ap.vercel.app
-
 ## License
-
 ![GitHub](https://img.shields.io/github/license/ItsAlexanderPopov/Echo)
 
 See LICENSE file for more information.
@@ -38,5 +37,5 @@ See LICENSE file for more information.
 To view all current open issues:
 <br/><a href='https://github.com/ItsAlexanderPopov/dashboard/issues'><img alt="Static Badge" src="https://img.shields.io/badge/Open%20Issues-148F77?style=for-the-badge"></a>
 
-To add a new issue or idea we'd happy to hear it from you:
+To add a new issue or idea, I would be happy to hear it from you:
 <br/><a href='https://github.com/ItsAlexanderPopov/dashboard/issues/new'><img alt="Static Badge" src="https://img.shields.io/badge/Open%20New%20Issues-2874A6?style=for-the-badge"></a>
