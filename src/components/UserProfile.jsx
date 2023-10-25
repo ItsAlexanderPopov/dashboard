@@ -1,6 +1,6 @@
 import React from 'react';
 import { userProfileData } from '../data/dummy';
-import avatar from '../data/avatar.jpg';
+import avatar from '../data/profileIMG.jpg';
 
 const UserProfile = () => {
 

@@ -8,7 +8,7 @@ import { MdKeyboardArrowDown, MdOutlineDarkMode, MdOutlineLightMode } from 'reac
 // Syncfusion
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 // Assets
-import avatar from '../data/avatar.jpg';
+import avatar from '../data/profileIMG.jpg';
 import { Cart, Chat, Notification, UserProfile } from '.';
 // Global state of menu
 import { useStateContext  } from '../contexts/ContextProvider';
@@ -56,15 +56,15 @@ const Navbar = () => {
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
 
   return (
-    <div className='flex justify-between p-2 m-2 md:mx-28'>
+    <div className='flex justify-between p-2 m-2 sm:mr-[400px] xl:mr-[200px] mr-2'>
       <NavButton 
         title="Menu" 
         customFunc={handleActiveMenu} 
         color={"#748BA7"} 
         icon={<AiOutlineMenu/>}
       />
-      <div className='flex'>
-        <div className='hidden lg:flex'>
+      <div className='flex'> 
+        <div className='sm:flex hidden'>
           <NavButton
             title="Change Theme" 
             customFunc={()=> { setLightMode(!lightMode);
@@ -101,7 +101,7 @@ const Navbar = () => {
             src={avatar}
             className='rounded-full w-10 h-10'
            />
-            <p className='text-slate-400 text-lg items-center hidden md:flex'>
+            <p className='text-slate-400 text-lg items-center hidden sm:flex'>
               <span>Hi,</span>
               <span className=" font-semibold ml-2">Alex</span>
               <MdKeyboardArrowDown/>

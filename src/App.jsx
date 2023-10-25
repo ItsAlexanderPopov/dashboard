@@ -12,7 +12,7 @@ const App = () => {
   const {activeMenu, lightMode} = useStateContext();
 
   return (
-    <div className={!lightMode && 'dark'}>
+    <div className={lightMode ? '' : 'dark'}>
       <BrowserRouter>
         <div className='flex relative dark:bg-main-dark-bg overflow-x-hidden'>
           {activeMenu ? (
